@@ -1,0 +1,48 @@
+{
+  "name": "scraperflow",
+  "version": "0.0.1",
+  "description": "Node.js library for concurrent scraping",
+  "keywords": [
+    "scraper",
+    "flow",
+    "flows",
+    "concurrent",
+    "parser",
+    "request",
+    "fetch"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m4w1s/scraperflow.git"
+  },
+  "author": "Mawis",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc -p tsconfig.json",
+    "format": "prettier --write \"**/*.{js,ts}\"",
+    "lint": "eslint --fix \"**/*.{js,ts}\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.4",
+    "@tsconfig/strictest": "^2.0.1",
+    "@types/node": "^18.16.13",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.0.4"
+  }
+}

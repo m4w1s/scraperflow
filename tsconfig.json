@@ -2,7 +2,9 @@
   "extends": ["@tsconfig/node16/tsconfig", "@tsconfig/strictest/tsconfig"],
   "compilerOptions": {
     "declaration": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "noImplicitAny": false,
+    "exactOptionalPropertyTypes": false
   },
   "exclude": [
     "node_modules", "dist"

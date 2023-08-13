@@ -9,6 +9,7 @@ module.exports = {
     project: './tsconfig.json',
     tsconfigRootDir: __dirname,
   },
+  ignorePatterns: ['.eslintrc.cjs', 'dist'],
   plugins: [
     '@typescript-eslint',
   ],
@@ -20,4 +21,10 @@ module.exports = {
     'plugin:@typescript-eslint/strict',
     'prettier',
   ],
+  rules: {
+    'prefer-const': ['error', {
+      destructuring: 'all',
+    }],
+    '@typescript-eslint/consistent-type-imports': 'error',
+  },
 };
